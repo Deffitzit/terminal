@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#city-pointer-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: auto;
+  height: auto;
+}
+
+body {
+  background: linear-gradient(35deg, rgb(244, 245, 176) 0%, rgb(214, 176, 245) 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.topterminal-img {
+  width: 100px;
+}
+
+.bottomterminal-img {
+  width: 100px;
+}/*# sourceMappingURL=styles.css.map */

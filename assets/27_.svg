@@ -1,0 +1,14 @@
+<svg width="210" height="128" viewBox="0 0 210 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-outside-1_368_402" maskUnits="userSpaceOnUse" x="0" y="0" width="210" height="128" fill="black">
+<rect fill="white" width="210" height="128"/>
+<path d="M5 103C5 114.046 13.9543 123 25 123H185C196.046 123 205 114.046 205 103V0.0491791H5V103Z"/>
+</mask>
+<path d="M5 103C5 114.046 13.9543 123 25 123H185C196.046 123 205 114.046 205 103V0.0491791H5V103Z" fill="#323232"/>
+<path d="M0 103C0 116.807 11.1929 128 25 128H185C198.807 128 210 116.807 210 103H200C200 111.284 193.284 118 185 118H25C16.7157 118 10 111.284 10 103H0ZM205 0.0491791H5H205ZM0 0.0491791V103C0 116.807 11.1929 128 25 128V118C16.7157 118 10 111.284 10 103V0.0491791H0ZM185 128C198.807 128 210 116.807 210 103V0.0491791H200V103C200 111.284 193.284 118 185 118V128Z" fill="#5F5F5F" mask="url(#path-1-outside-1_368_402)"/>
+<rect width="129" height="73" transform="matrix(1 0 0 -1 40 73)" fill="#515151"/>
+<rect x="169" y="58" width="15" height="30" fill="#D9D9D9"/>
+<rect x="40" width="30" height="43" fill="#D9D9D9"/>
+<rect x="40" y="43" width="129" height="30" fill="#D9D9D9"/>
+<rect x="139" width="30" height="43" fill="#D9D9D9"/>
+<rect x="90" width="30" height="43" fill="#D9D9D9"/>
+</svg>

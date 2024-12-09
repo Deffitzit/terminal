@@ -1,0 +1,15 @@
+<svg width="210" height="128" viewBox="0 0 210 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-outside-1_368_339" maskUnits="userSpaceOnUse" x="0" y="0" width="210" height="128" fill="black">
+<rect fill="white" width="210" height="128"/>
+<path d="M5 25C5 13.9543 13.9543 5 25 5H185C196.046 5 205 13.9543 205 25V127.951H5V25Z"/>
+</mask>
+<path d="M5 25C5 13.9543 13.9543 5 25 5H185C196.046 5 205 13.9543 205 25V127.951H5V25Z" fill="#323232"/>
+<path d="M0 25C0 11.1929 11.1929 0 25 0H185C198.807 0 210 11.1929 210 25H200C200 16.7157 193.284 10 185 10H25C16.7157 10 10 16.7157 10 25H0ZM205 127.951H5H205ZM0 127.951V25C0 11.1929 11.1929 0 25 0V10C16.7157 10 10 16.7157 10 25V127.951H0ZM185 0C198.807 0 210 11.1929 210 25V127.951H200V25C200 16.7157 193.284 10 185 10V0Z" fill="#5F5F5F" mask="url(#path-1-outside-1_368_339)"/>
+<rect x="40" y="55" width="129" height="73" fill="#515151"/>
+<rect x="40" y="55" width="30" height="73" fill="#D9D9D9"/>
+<rect x="87" y="98" width="30" height="30" fill="#D9D9D9"/>
+<rect x="130" y="55" width="39" height="30" fill="#D9D9D9"/>
+<rect x="115" y="70" width="30" height="30" fill="#D9D9D9"/>
+<rect x="102" y="85" width="30" height="30" fill="#D9D9D9"/>
+<rect x="70" y="115" width="30" height="13" fill="#D9D9D9"/>
+</svg>
