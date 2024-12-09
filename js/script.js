@@ -4,6 +4,8 @@ const inputFrame = document.getElementById("input_frame");
 
 const flipScreenCount = 15;
 
+const alphabet = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ-'
+
 function TopTerminal(count) {
     for (let i = 0; i < count; i++) {
         let TerminalImg = document.createElement("div");
@@ -39,24 +41,23 @@ function handleInput(terminalClass, displayFunction) {
     });
 }
 
-function getTargetIndex(targetLetter) {
-    // Получаем порядковый номер буквы в алфавите (1-33)
-    const letterIndex = targetLetter.toLowerCase().charCodeAt(0) - 'a'.charCodeAt(0) + 1;
-    return Math.max(letterIndex, 0);
-}
-
 function displayTopLetter(divElement, targetLetter) {
     const svgFiles = ['/assets/1-.svg', '/assets/2-.svg', '/assets/3-.svg', '/assets/4-.svg', '/assets/5-.svg', '/assets/6-.svg', '/assets/7-.svg', 
         '/assets/8-.svg', '/assets/9-.svg', '/assets/10-.svg', '/assets/11-.svg', '/assets/12-.svg', '/assets/13-.svg', '/assets/14-.svg', 
         '/assets/15-.svg', '/assets/16-.svg', '/assets/17-.svg', '/assets/18-.svg', '/assets/19-.svg', '/assets/20-.svg', '/assets/21-.svg', 
         '/assets/22-.svg', '/assets/23-.svg', '/assets/24-.svg', '/assets/25-.svg', '/assets/26-.svg', '/assets/27-.svg', '/assets/28-.svg', 
         '/assets/29-.svg', '/assets/30-.svg', '/assets/31-.svg', '/assets/32-.svg', '/assets/33-.svg'];
-    
-    let targetIndex = getTargetIndex(targetLetter);
+
     let index = 0;
     const interval = setInterval(() => {
-        divElement.innerHTML = `<img src="${svgFiles[index % svgFiles.length]}" alt="${targetLetter}" />`;
+        divElement.innerHTML = `<img src="${svgFiles[index % svgFiles.length]}"/>`;
+        alphabetLetter = alphabet[index % alphabet.length]
         index++;
+
+
+        if (alphabetLetter === targetLetter.toUpperCase()) {
+            clearInterval(interval)
+        }
     }, 300);
 }
 
@@ -67,12 +68,16 @@ function displayBottomLetter(divElement, targetLetter) {
         '/assets/22_.svg', '/assets/23_.svg', '/assets/24_.svg', '/assets/25_.svg', '/assets/26_.svg', '/assets/27_.svg', '/assets/28_.svg', 
         '/assets/29_.svg', '/assets/30_.svg', '/assets/31_.svg', '/assets/32_.svg', '/assets/33_.svg'];
     
-    let targetIndex = getTargetIndex(targetLetter);
     let index = 0;
     const interval = setInterval(() => {
-        divElement.innerHTML = `<img src="${svgFiles[index % svgFiles.length]}" alt="${targetLetter}" />`;
+        divElement.innerHTML = `<img src="${svgFiles[index % svgFiles.length]}"/>`;
+        alphabetLetter = alphabet[index % alphabet.length]
         index++;
-        
+
+
+        if (alphabetLetter === targetLetter.toUpperCase()) {
+            clearInterval(interval)
+        }
     }, 300);
 }
 
