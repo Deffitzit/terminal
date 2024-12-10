@@ -50,7 +50,7 @@ function displayTopLetter(divElement, targetLetter) {
 
     let index = 0;
     const interval = setInterval(() => {
-        divElement.innerHTML = `<img src="${svgFiles[index % svgFiles.length]}"/>`;
+        divElement.innerHTML = `<img class = "term-svg" src="${svgFiles[index % svgFiles.length]}"/>`;
         alphabetLetter = alphabet[index % alphabet.length]
         index++;
 
@@ -58,7 +58,7 @@ function displayTopLetter(divElement, targetLetter) {
         if (alphabetLetter === targetLetter.toUpperCase()) {
             clearInterval(interval)
         }
-    }, 300);
+    }, 100);
 }
 
 function displayBottomLetter(divElement, targetLetter) {
@@ -70,7 +70,7 @@ function displayBottomLetter(divElement, targetLetter) {
     
     let index = 0;
     const interval = setInterval(() => {
-        divElement.innerHTML = `<img src="${svgFiles[index % svgFiles.length]}"/>`;
+        divElement.innerHTML = `<img class = "term-svg" src="${svgFiles[index % svgFiles.length]}"/>`;
         alphabetLetter = alphabet[index % alphabet.length]
         index++;
 
@@ -78,7 +78,7 @@ function displayBottomLetter(divElement, targetLetter) {
         if (alphabetLetter === targetLetter.toUpperCase()) {
             clearInterval(interval)
         }
-    }, 300);
+    }, 100);
 }
 
     TopTerminal(flipScreenCount);

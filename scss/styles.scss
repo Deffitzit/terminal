@@ -8,14 +8,18 @@
     flex-direction: row;
 }
 
-.container {
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: auto;
 
 }
 
 body {
-    background: linear-gradient(35deg, rgb(244, 245, 176) 0%, rgb(214, 176, 245) 100%);
+    background: linear-gradient(35deg, rgb(99, 99, 99) 0%, rgb(214, 176, 245) 100%);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -24,6 +28,7 @@ body {
 }
 
 .terminal {
+    width: 90vw;
     display: flex;
     flex-direction: row;
     align-items: center;
