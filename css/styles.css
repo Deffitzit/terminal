@@ -9,6 +9,7 @@
 }
 
 #container {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +19,7 @@
 }
 
 body {
-  background: linear-gradient(35deg, rgb(99, 99, 99) 0%, rgb(214, 176, 245) 100%);
+  background: #000000;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -27,11 +28,18 @@ body {
 }
 
 .terminal {
-  width: 90vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.term-svg {
+  width: 200px;
+}
+
+.scobs-svg {
+  margin: 0 8.5px;
 }
 
 .topterminal-img {
