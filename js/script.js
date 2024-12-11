@@ -42,20 +42,20 @@ function AlphaBottomTerminal(count) {
 
 function handleInput(terminalClass, displayFunction) {
     addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-    let inputFrameValue = inputFrame.value;
-    if (inputFrameValue) {
-    let signArr = inputFrameValue.split('');
-    let getTerminalImg = document.getElementsByClassName(terminalClass);
-    for (let i = 0; i < flipScreenCount; i++) {
-    if (signArr[i] !== undefined && /^[A-Za-zА-Яа-яЁё-]$/.test(signArr[i])) {
-    displayFunction(getTerminalImg[i], signArr[i]);
-    }
-    }
-    }
-    }
+        if (event.key === "Enter") {
+        let inputFrameValue = inputFrame.value;
+        if (inputFrameValue) {
+            let signArr = inputFrameValue.split('');
+            let getTerminalImg = document.getElementsByClassName(terminalClass);
+            for (let i = 0; i < flipScreenCount; i++) {
+                if (signArr[i] !== undefined && /^[A-Za-zА-Яа-яЁё-]$/.test(signArr[i])) {
+                    displayFunction(getTerminalImg[i], signArr[i]);
+                    }
+                }
+            }
+        }
     });
-    }
+}
     
     
 
